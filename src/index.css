@@ -10,42 +10,40 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-/* Custom scrollbar stile Access */
+/* Scrollbar personalizzata */
 ::-webkit-scrollbar {
-  width: 14px;
-  height: 14px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  border: 1px solid #ccc;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #c1c1c1;
-  border: 1px solid #999;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
 
-/* Selezione stile Access */
-::selection {
-  background-color: #0078d4;
-  color: white;
+/* Code block styling */
+pre code {
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 13px;
 }
 
-/* Animazione filtro rapido */
-@keyframes pulse-border {
-  0%, 100% { border-color: #3b82f6; }
-  50% { border-color: #93c5fd; }
+/* Checkbox custom */
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #dc2626;
 }
 
-input:focus {
-  animation: pulse-border 2s infinite;
+/* Border left utility */
+.border-l-3 {
+  border-left-width: 3px;
 }
